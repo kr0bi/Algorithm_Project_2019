@@ -123,6 +123,33 @@ Algorithm_Project_2019/fast:
 	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/build
 .PHONY : Algorithm_Project_2019/fast
 
+arrayList.o: arrayList.c.o
+
+.PHONY : arrayList.o
+
+# target to build an object file
+arrayList.c.o:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.o
+.PHONY : arrayList.c.o
+
+arrayList.i: arrayList.c.i
+
+.PHONY : arrayList.i
+
+# target to preprocess a source file
+arrayList.c.i:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.i
+.PHONY : arrayList.c.i
+
+arrayList.s: arrayList.c.s
+
+.PHONY : arrayList.s
+
+# target to generate assembly for a file
+arrayList.c.s:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.s
+.PHONY : arrayList.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -150,6 +177,87 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/main.c.s
 .PHONY : main.c.s
 
+select.o: select.c.o
+
+.PHONY : select.o
+
+# target to build an object file
+select.c.o:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/select.c.o
+.PHONY : select.c.o
+
+select.i: select.c.i
+
+.PHONY : select.i
+
+# target to preprocess a source file
+select.c.i:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/select.c.i
+.PHONY : select.c.i
+
+select.s: select.c.s
+
+.PHONY : select.s
+
+# target to generate assembly for a file
+select.c.s:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/select.c.s
+.PHONY : select.c.s
+
+sum.o: sum.c.o
+
+.PHONY : sum.o
+
+# target to build an object file
+sum.c.o:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/sum.c.o
+.PHONY : sum.c.o
+
+sum.i: sum.c.i
+
+.PHONY : sum.i
+
+# target to preprocess a source file
+sum.c.i:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/sum.c.i
+.PHONY : sum.c.i
+
+sum.s: sum.c.s
+
+.PHONY : sum.s
+
+# target to generate assembly for a file
+sum.c.s:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/sum.c.s
+.PHONY : sum.c.s
+
+weighted_median.o: weighted_median.c.o
+
+.PHONY : weighted_median.o
+
+# target to build an object file
+weighted_median.c.o:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.o
+.PHONY : weighted_median.c.o
+
+weighted_median.i: weighted_median.c.i
+
+.PHONY : weighted_median.i
+
+# target to preprocess a source file
+weighted_median.c.i:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.i
+.PHONY : weighted_median.c.i
+
+weighted_median.s: weighted_median.c.s
+
+.PHONY : weighted_median.s
+
+# target to generate assembly for a file
+weighted_median.c.s:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.s
+.PHONY : weighted_median.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +267,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Algorithm_Project_2019"
 	@echo "... edit_cache"
+	@echo "... arrayList.o"
+	@echo "... arrayList.i"
+	@echo "... arrayList.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... select.o"
+	@echo "... select.i"
+	@echo "... select.s"
+	@echo "... sum.o"
+	@echo "... sum.i"
+	@echo "... sum.s"
+	@echo "... weighted_median.o"
+	@echo "... weighted_median.i"
+	@echo "... weighted_median.s"
 .PHONY : help
 
 

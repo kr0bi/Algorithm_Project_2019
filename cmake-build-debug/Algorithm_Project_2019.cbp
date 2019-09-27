@@ -78,7 +78,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/arrayList.c">
+			<Option target="Algorithm_Project_2019"/>
+		</Unit>
+		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h">
+			<Option target="Algorithm_Project_2019"/>
+		</Unit>
 		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/main.c">
+			<Option target="Algorithm_Project_2019"/>
+		</Unit>
+		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/select.c">
+			<Option target="Algorithm_Project_2019"/>
+		</Unit>
+		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/select.h">
+			<Option target="Algorithm_Project_2019"/>
+		</Unit>
+		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/sum.c">
+			<Option target="Algorithm_Project_2019"/>
+		</Unit>
+		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/sum.h">
+			<Option target="Algorithm_Project_2019"/>
+		</Unit>
+		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.c">
+			<Option target="Algorithm_Project_2019"/>
+		</Unit>
+		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.h">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>
 		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/CMakeLists.txt">

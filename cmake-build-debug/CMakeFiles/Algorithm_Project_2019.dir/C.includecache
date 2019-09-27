@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
+stdio.h
+-
+stdlib.h
+-
+
+/home/daniele/CLionProjects/Algorithm_Project_2019/sum.c
+sum.h
+/home/daniele/CLionProjects/Algorithm_Project_2019/sum.h
+
+/home/daniele/CLionProjects/Algorithm_Project_2019/sum.h
+arrayList.h
+/home/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
+
