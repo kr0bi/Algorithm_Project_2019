@@ -11,23 +11,43 @@ int partition (Array* a, int l, int r){
     for (int j=l; j<r; j++){
         if (a->array[j] <= x){
             swap(&a->array[i], &a->array[j]);
-            printArray(a);
+            //printArray(a);
             i++;
         }
     }
-    printArray(a);
+    //printArray(a);
     swap(&a->array[i], &a->array[r]);
     return i;
 }
 
-/**
- * ritorna l'elemento piu' piccolo a quella posizione
- * @param a
- * @param l
- * @param r
- * @param k
- * @return
- */
+int partition_lomuto(Array *list, int left, int right, int pivotIndex){
+    double pivotValue = list->array[pivotIndex];
+    swap(&list->array[pivotIndex],&list->array[right]);
+    int storeIndex = left;
+    for (int i = left; i<right; i++){
+        if (list->array[i] < pivotValue){
+            swap(&list->array[storeIndex],&list->array[i]);
+            ++storeIndex;
+        }
+    }
+    swap(&list->array[right],&list->array[storeIndex]);
+    return storeIndex;
+}
+
+double select_mio(Array *a, int left, int right, int k){
+    if (left == right)        // If the list contains only one element,
+        return a->array[left];  // return that element
+    int pivotIndex  = left+floor(rand() % (right - left + 1));
+    pivotIndex  = partition_lomuto(a, left, right, pivotIndex);
+    // The pivot is in its final sorted position
+    if (k == pivotIndex)
+        return a->array[k];
+    else if (k < pivotIndex)
+        return select_mio(a, left, pivotIndex - 1, k);
+    else
+        return select_mio(a, pivotIndex + 1, right, k - pivotIndex);
+}
+
 
 double kthSmallest(Array* a, int l, int r, int k){
     if (k>0 && k<=(r-l+1)){
@@ -62,10 +82,8 @@ int find_x_in_a(Array *a, double x){
 
 
 int partition_select (Array *a, int l, int r){
-    double x = kthSmallest(a, l , r, floor((l+r)/2));
+    double x = select_mio(a, l , r, floor((l+r)/2));
     int index = find_x_in_a(a, x);
-    swap(&a->array[index], &a->array[r]);
-    printArray(a);
-    return partition(a,l,r);
+    return index;
 }
 

@@ -24,8 +24,8 @@ double weighted_median_sort(Array *ptr){
 double weighted_median_optimal(Array *ptr){
     int p = 0;
     int r = ptr->size-1;
-    double w = sum_partitions(ptr, 0, r);
-    return weighted_median_optimal_rec(ptr, p, r, w/2);
+    double w = sum_partitions(ptr, p, r);
+    return weighted_median_optimal_rec(ptr, p, r, w);
 }
 
 
@@ -41,17 +41,16 @@ double weighted_median_optimal_rec(Array *ptr, int p, int r, double target){
         }
     }
     int q = partition_select(ptr, p, r);
-    printArray(ptr);
     double wl = sum_partitions(ptr, p, q-1);
     double wg = sum_partitions(ptr, q+1, r);
 
-    if (wl < target && wg >= target ){
+    if (wl < floor(target/2.0) && wg <= floor(target/2.0) ){
         return ptr->array[q];
     } else {
-        if (wg < target){
-            weighted_median_optimal_rec(ptr, q+1, r, target-wg);
+        if (wl > wg){
+            weighted_median_optimal_rec(ptr, p, q, target-wg);
         } else {
-            weighted_median_optimal_rec(ptr, p, q-1, target);
+            weighted_median_optimal_rec(ptr, q, r, target-wl);
         }
     }
 

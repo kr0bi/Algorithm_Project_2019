@@ -15,6 +15,9 @@
  */
 int partition (Array* a, int l, int r);
 
+int partition_lomuto(Array *list, int left, int right, int pivotIndex);
+double select_mio(Array *a, int left, int right, int k);
+
 /*
  * Questa funzione torna il k-esimo elemento piu' piccolo
  * nell'array in posizione [l...r] usando un metodo basato su QuickSort

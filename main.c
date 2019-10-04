@@ -6,13 +6,19 @@
 
 
 int main() {
-    Array *head = newArray(7.0);
-    addElementToArray(head, 6.0);
+    Array *head = newArray(1.5);
     addElementToArray(head, 5.0);
     addElementToArray(head, 4.0);
     addElementToArray(head, 3.0);
     addElementToArray(head, 2.0);
-    addElementToArray(head,1.0);
+    addElementToArray(head, 1.0);
+    addElementToArray(head, 0.01);
+    //int q = partition_select(head, 0, head->size-1);
+    //printf("q: %d\n", q);
+
+    /*addElementToArray(head, 3.0);
+    addElementToArray(head, 2.0);
+    addElementToArray(head,1.0);*/
 
     printf("Dimensione array: %d\n", head->size);
     printArray(head);
