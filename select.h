@@ -3,6 +3,7 @@
 //
 
 #include "arrayList.h"
+#include <math.h>
 
 #ifndef ALGORITHM_PROJECT_2019_SELECT_H
 #define ALGORITHM_PROJECT_2019_SELECT_H
@@ -26,5 +27,7 @@ double kthSmallest(Array* a, int l, int r, int k);
  * Funzione di swap di due elementi
  */
 void swap (double* a, double *b);
+
+int partition_select (Array *a, int l, int r);
 
 #endif //ALGORITHM_PROJECT_2019_SELECT_H

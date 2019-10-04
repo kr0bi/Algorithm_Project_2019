@@ -12,11 +12,33 @@ stdio.h
 stdlib.h
 -
 
-/home/daniele/CLionProjects/Algorithm_Project_2019/sum.c
-sum.h
-/home/daniele/CLionProjects/Algorithm_Project_2019/sum.h
+/home/daniele/CLionProjects/Algorithm_Project_2019/select.h
+arrayList.h
+/home/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
+math.h
+-
+
+/home/daniele/CLionProjects/Algorithm_Project_2019/sort.h
+arrayList.h
+/home/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
 
 /home/daniele/CLionProjects/Algorithm_Project_2019/sum.h
+arrayList.h
+/home/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
+
+/home/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.c
+weighted_median.h
+/home/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.h
+select.h
+/home/daniele/CLionProjects/Algorithm_Project_2019/select.h
+sum.h
+/home/daniele/CLionProjects/Algorithm_Project_2019/sum.h
+sort.h
+/home/daniele/CLionProjects/Algorithm_Project_2019/sort.h
+select.h
+/home/daniele/CLionProjects/Algorithm_Project_2019/select.h
+
+/home/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.h
 arrayList.h
 /home/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
 

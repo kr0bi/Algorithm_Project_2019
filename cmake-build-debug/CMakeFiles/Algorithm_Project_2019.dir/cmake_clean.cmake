@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.o"
   "CMakeFiles/Algorithm_Project_2019.dir/main.c.o"
   "CMakeFiles/Algorithm_Project_2019.dir/select.c.o"
+  "CMakeFiles/Algorithm_Project_2019.dir/sort.c.o"
   "CMakeFiles/Algorithm_Project_2019.dir/sum.c.o"
   "CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.o"
 )

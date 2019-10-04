@@ -93,6 +93,12 @@
 		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/select.h">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>
+		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/sort.c">
+			<Option target="Algorithm_Project_2019"/>
+		</Unit>
+		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/sort.h">
+			<Option target="Algorithm_Project_2019"/>
+		</Unit>
 		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/sum.c">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>

@@ -14,6 +14,7 @@ struct arrayList{
 typedef struct arrayList Array;
 
 Array *newArray (double data);
+Array *newArrayLength (int length);
 Array *addElementToArray (Array *a, double data);
 
 int getSize(Array *a);

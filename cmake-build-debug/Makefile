@@ -204,6 +204,33 @@ select.c.s:
 	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/select.c.s
 .PHONY : select.c.s
 
+sort.o: sort.c.o
+
+.PHONY : sort.o
+
+# target to build an object file
+sort.c.o:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/sort.c.o
+.PHONY : sort.c.o
+
+sort.i: sort.c.i
+
+.PHONY : sort.i
+
+# target to preprocess a source file
+sort.c.i:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/sort.c.i
+.PHONY : sort.c.i
+
+sort.s: sort.c.s
+
+.PHONY : sort.s
+
+# target to generate assembly for a file
+sort.c.s:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/sort.c.s
+.PHONY : sort.c.s
+
 sum.o: sum.c.o
 
 .PHONY : sum.o
@@ -276,6 +303,9 @@ help:
 	@echo "... select.o"
 	@echo "... select.i"
 	@echo "... select.s"
+	@echo "... sort.o"
+	@echo "... sort.i"
+	@echo "... sort.s"
 	@echo "... sum.o"
 	@echo "... sum.i"
 	@echo "... sum.s"

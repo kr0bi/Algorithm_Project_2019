@@ -6,19 +6,44 @@
 
 
 int main() {
-    Array *head = newArray(0.1);
-    addElementToArray(head, 0.35);
-    addElementToArray(head, 0.05);
-    addElementToArray(head, 0.1);
-    addElementToArray(head, 0.15);
-    addElementToArray(head, 0.05);
-    addElementToArray(head, 0.2);
+    Array *head = newArray(7.0);
+    addElementToArray(head, 6.0);
+    addElementToArray(head, 5.0);
+    addElementToArray(head, 4.0);
+    addElementToArray(head, 3.0);
+    addElementToArray(head, 2.0);
+    addElementToArray(head,1.0);
+
     printf("Dimensione array: %d\n", head->size);
     printArray(head);
-    //printf("k-esimo smallest element is %.2f", kthSmallest(head, 0, head->size-1, 3));
-    printf("mediano pesato: %.2f\n", weighted_median_optimal(head, 0, head->size-1, sum_partitions(head, 0, head->size-1)));
-    printf("Dimensione array: %d\n", head->size);
-    printArray(head);
+
+    //printf("il perno sta: %d\n", partition_select(head, 0, head->size-1));
+    //printf("Dimensione array: %d\n", head->size);
+    //printArray(head);
+
+    /*Array *ciccio = newArray(1);
+    addElementToArray(ciccio, 2);
+    addElementToArray(ciccio, 3);
+    addElementToArray(ciccio, 4);
+    addElementToArray(ciccio, 5);
+    addElementToArray(ciccio,6);
+    addElementToArray(ciccio, 7);
+    printf("Dimensione array: %d\n", ciccio->size);
+    printArray(ciccio);*/
+
+
+    double med_lin = weighted_median_optimal(head);
+    double med_sort = weighted_median_sort(head);
+
+
+    printf("linear: %.2f\n", med_lin);
+    printf("sort: %.2f\n", med_sort);
+
+    /*if (med_sort == med_lin){
+        printf("true\n");
+    } else {
+        printf("false\n");
+    }*/
 
 
     /*printf("Dimensione array: %d\n", head->size);

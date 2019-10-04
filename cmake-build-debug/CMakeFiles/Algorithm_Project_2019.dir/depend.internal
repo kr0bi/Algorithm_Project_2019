@@ -14,6 +14,10 @@ CMakeFiles/Algorithm_Project_2019.dir/select.c.o
  /home/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
  /home/daniele/CLionProjects/Algorithm_Project_2019/select.c
  /home/daniele/CLionProjects/Algorithm_Project_2019/select.h
+CMakeFiles/Algorithm_Project_2019.dir/sort.c.o
+ /home/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
+ /home/daniele/CLionProjects/Algorithm_Project_2019/sort.c
+ /home/daniele/CLionProjects/Algorithm_Project_2019/sort.h
 CMakeFiles/Algorithm_Project_2019.dir/sum.c.o
  /home/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
  /home/daniele/CLionProjects/Algorithm_Project_2019/sum.c
@@ -21,6 +25,7 @@ CMakeFiles/Algorithm_Project_2019.dir/sum.c.o
 CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.o
  /home/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
  /home/daniele/CLionProjects/Algorithm_Project_2019/select.h
+ /home/daniele/CLionProjects/Algorithm_Project_2019/sort.h
  /home/daniele/CLionProjects/Algorithm_Project_2019/sum.h
  /home/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.c
  /home/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.h
