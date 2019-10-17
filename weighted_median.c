@@ -25,11 +25,9 @@ double weighted_median_optimal(Array *ptr){
     int p = 0;
     int r = ptr->size-1;
     double w = sum_partitions(ptr, p, r);
-    return weighted_median_optimal_rec(ptr, p, r, w);
+    return weighted_median_optimal_rec(ptr, p, r, floor(w/2.0), floor(w/2.0));
 }
-
-
-double weighted_median_optimal_rec(Array *ptr, int p, int r, double target){
+double weighted_median_optimal_rec(Array *ptr, int p, int r, double targetsx, double targetdx){
     if (r==p){
         return ptr->array[p];
     }
@@ -43,15 +41,13 @@ double weighted_median_optimal_rec(Array *ptr, int p, int r, double target){
     int q = partition_select(ptr, p, r);
     double wl = sum_partitions(ptr, p, q-1);
     double wg = sum_partitions(ptr, q+1, r);
-
-    if (wl < floor(target/2.0) && wg <= floor(target/2.0) ){
+    if (wl <= targetsx && wg < targetdx ){
         return ptr->array[q];
     } else {
         if (wl > wg){
-            weighted_median_optimal_rec(ptr, p, q, target-wg);
+            weighted_median_optimal_rec(ptr, p, q, targetsx, targetdx-wg);
         } else {
-            weighted_median_optimal_rec(ptr, q, r, target-wl);
+            weighted_median_optimal_rec(ptr, q, r, targetsx-wl, targetdx);
         }
     }
-
 }

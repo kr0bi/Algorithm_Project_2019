@@ -8,110 +8,106 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Algorithm_Project_2019">
-				<Option output="/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Algorithm_Project_2019" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Algorithm_Project_2019.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 Algorithm_Project_2019"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 Algorithm_Project_2019"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Algorithm_Project_2019/fast">
-				<Option output="/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Algorithm_Project_2019" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Algorithm_Project_2019.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 Algorithm_Project_2019/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 Algorithm_Project_2019/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/arrayList.c">
+		<Unit filename="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/arrayList.c">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>
-		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h">
+		<Unit filename="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>
-		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/main.c">
+		<Unit filename="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/main.c">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>
-		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/select.c">
+		<Unit filename="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/select.c">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>
-		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/select.h">
+		<Unit filename="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/select.h">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>
-		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/sort.c">
+		<Unit filename="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sort.c">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>
-		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/sort.h">
+		<Unit filename="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sort.h">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>
-		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/sum.c">
+		<Unit filename="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sum.c">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>
-		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/sum.h">
+		<Unit filename="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sum.h">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>
-		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.c">
+		<Unit filename="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.c">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>
-		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.h">
+		<Unit filename="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.h">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>
-		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

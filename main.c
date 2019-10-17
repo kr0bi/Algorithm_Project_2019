@@ -12,7 +12,7 @@ int main() {
     addElementToArray(head, 3.0);
     addElementToArray(head, 2.0);
     addElementToArray(head, 1.0);
-    addElementToArray(head, 0.01);
+    //addElementToArray(head, 0.01);
     //int q = partition_select(head, 0, head->size-1);
     //printf("q: %d\n", q);
 
