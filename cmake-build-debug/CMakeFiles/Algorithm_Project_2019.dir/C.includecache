@@ -6,37 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
+/mnt/c/Users/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
 stdio.h
 -
 stdlib.h
 -
 
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/main.c
-stdio.h
--
-arrayList.h
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
-select.h
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/select.h
-weighted_median.h
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.h
-sum.h
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sum.h
-
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/select.h
-arrayList.h
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
+/mnt/c/Users/daniele/CLionProjects/Algorithm_Project_2019/select_miglioramento.c
+select_miglioramento.h
+/mnt/c/Users/daniele/CLionProjects/Algorithm_Project_2019/select_miglioramento.h
+sort_modifica.h
+/mnt/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.h
 math.h
 -
 
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sum.h
+/mnt/c/Users/daniele/CLionProjects/Algorithm_Project_2019/select_miglioramento.h
 arrayList.h
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
+/mnt/c/Users/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
 
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.h
+/mnt/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.h
 arrayList.h
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
-math.h
--
+/mnt/c/Users/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
 

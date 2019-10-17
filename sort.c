@@ -4,13 +4,13 @@
 
 #include "sort.h"
 
-void sort(Array *ptr){
+void sort_array(Array *ptr){
     int p = 0;
     int q = ptr->size-1;
-    mergesort(ptr, p, q);
+    mergesort_2(ptr, p, q);
 }
 
-void merge (Array *ptr, int p, int q, int r){
+void merge_2 (Array *ptr, int p, int q, int r){
     Array *B = newArrayLength(ptr->size);
     int i = p;
     int j = r + 1;
@@ -38,11 +38,11 @@ void merge (Array *ptr, int p, int q, int r){
 
 }
 
-void mergesort (Array *ptr, int p, int q){
+void mergesort_2 (Array *ptr, int p, int q){
     if (p<q){
         int r = p+(q-p)/2;
-        mergesort(ptr, p, r);
-        mergesort(ptr, r+1, q);
-        merge(ptr, p, q, r);
+        mergesort_2(ptr, p, r);
+        mergesort_2(ptr, r + 1, q);
+        merge_2(ptr, p, q, r);
     }
 }

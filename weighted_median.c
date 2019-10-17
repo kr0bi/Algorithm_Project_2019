@@ -3,14 +3,13 @@
 //
 
 #include "weighted_median.h"
-#include "select.h"
+#include "select_miglioramento.h"
 #include "sum.h"
 #include "sort.h"
-#include "select.h"
 
 double weighted_median_sort(Array *ptr){
     double W = sum_partitions(ptr, 0, ptr->size-1);
-    sort(ptr);
+    sort_array(ptr);
     double sum = 0;
     for (int i=0; i<ptr->size; i++){
         sum += ptr->array[i];
@@ -41,6 +40,7 @@ double weighted_median_optimal_rec(Array *ptr, int p, int r, double targetsx, do
     int q = partition_select(ptr, p, r);
     double wl = sum_partitions(ptr, p, q-1);
     double wg = sum_partitions(ptr, q+1, r);
+    //printArray(ptr);
     if (wl <= targetsx && wg < targetdx ){
         return ptr->array[q];
     } else {
