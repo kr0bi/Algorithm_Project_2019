@@ -7,6 +7,7 @@
 
 
 int main() {
+    double array[] = {1.5, 5.0, 4.0, 3.0, 2.0, 1.0, 10.0, 5.3};
     Array *head = newArray(1.5);
     addElementToArray(head, 5.0);
     addElementToArray(head, 4.0);

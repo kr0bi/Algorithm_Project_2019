@@ -2,7 +2,7 @@
 // Created by daniele on 9/27/19.
 //
 
-#include "arrayList.h"
+#include "../arrayList.h"
 #include <math.h>
 
 #ifndef ALGORITHM_PROJECT_2019_SELECT_H

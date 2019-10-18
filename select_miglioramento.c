@@ -32,8 +32,8 @@ double findMedian(double *ptr, int n){
     return ptr[n/2];
 }
 double kthSmallest(Array *ptr, int l, int r, int k){
-    if (k>0 && k<=r-l+1){
-        int n = r-l;
+    if (k>0 &&  k>=l && k<=r){
+        int n = r-l+1;
         int i;
         Array *median = newArrayLength((n+4)/5);
         //double median[(n+4)/5]; // There will be floor((n+4)/5) groups;

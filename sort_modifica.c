@@ -4,7 +4,7 @@
 
 #include "sort_modifica.h"
 
-void sort (double *ptr, double *fine_ptr){
+void sort (double *ptr, double *fine _ptr){
     int p = 0;
     int q = fine_ptr-ptr;
     mergesort(ptr, p, q);
