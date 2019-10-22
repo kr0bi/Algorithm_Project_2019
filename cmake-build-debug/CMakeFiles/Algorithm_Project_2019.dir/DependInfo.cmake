@@ -4,7 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/arrayList.c" "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.o"
   "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/main.c" "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles/Algorithm_Project_2019.dir/main.c.o"
   "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/select_miglioramento.c" "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles/Algorithm_Project_2019.dir/select_miglioramento.c.o"
   "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sort.c" "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles/Algorithm_Project_2019.dir/sort.c.o"

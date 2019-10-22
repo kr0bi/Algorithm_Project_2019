@@ -4,45 +4,45 @@
 
 #include "sort_modifica.h"
 
-void sort (double *ptr, double *fine _ptr){
-    int p = 0;
-    int q = fine_ptr-ptr;
-    mergesort(ptr, p, q);
+void sort (double *ptr, double *fine_ptr){
+    int p = ptr;
+    int q = fine_ptr;
+    mergesort(ptr, p, q-1, (q-p+1)/sizeof(double));
 }
 
-void merge (double *ptr, int p, int q, int r){
-    Array *B = newArrayLength(q-p);
+void merge (double *ptr, int p, int q, int r, int size){
+    double B[size];
     int i = p;
     int j = r + 1;
     for (int k = p; k <= q; k++){
         if (i<=r && j<=q) {
             if (ptr[i] <= ptr[j]) {
-                B->array[k] = ptr[i];
+                B[k] = ptr[i];
                 i = i + 1;
             } else if (ptr[i] > ptr[j]) {
-                B->array[k] = ptr[j];
+                B[k] = ptr[j];
                 j = j + 1;
             }
         } else if (i<=r){
-            B->array[k]=ptr[i];
+            B[k]=ptr[i];
             i=i+1;
         } else if (j<=q){
-            B->array[k]=ptr[j];
+            B[k]=ptr[j];
             j=j+1;
         }
     }
     for (int k = p; k<=q; k++){
-        ptr[k]=B->array[k];
+        ptr[k]=B[k];
     }
 
 
 }
 
-void mergesort (double *ptr, int p, int q) {
+void mergesort (double *ptr, int p, int q, int size) {
     if (p < q) {
         int r = p + (q - p) / 2;
-        mergesort(ptr, p, r);
-        mergesort(ptr, r + 1, q);
-        merge(ptr, p, q, r);
+        mergesort(ptr, p, r, size);
+        mergesort(ptr, r + 1, q, size);
+        merge(ptr, p, q, r, size);
     }
 }

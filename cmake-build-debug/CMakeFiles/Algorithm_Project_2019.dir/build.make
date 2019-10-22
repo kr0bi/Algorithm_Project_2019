@@ -83,22 +83,9 @@ CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.c -o CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.s
 
-CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.o: CMakeFiles/Algorithm_Project_2019.dir/flags.make
-CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.o: ../arrayList.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.o   -c /cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/arrayList.c
-
-CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/arrayList.c > CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.i
-
-CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/arrayList.c -o CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.s
-
 CMakeFiles/Algorithm_Project_2019.dir/sum.c.o: CMakeFiles/Algorithm_Project_2019.dir/flags.make
 CMakeFiles/Algorithm_Project_2019.dir/sum.c.o: ../sum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Algorithm_Project_2019.dir/sum.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Algorithm_Project_2019.dir/sum.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Algorithm_Project_2019.dir/sum.c.o   -c /cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sum.c
 
 CMakeFiles/Algorithm_Project_2019.dir/sum.c.i: cmake_force
@@ -111,7 +98,7 @@ CMakeFiles/Algorithm_Project_2019.dir/sum.c.s: cmake_force
 
 CMakeFiles/Algorithm_Project_2019.dir/select_miglioramento.c.o: CMakeFiles/Algorithm_Project_2019.dir/flags.make
 CMakeFiles/Algorithm_Project_2019.dir/select_miglioramento.c.o: ../select_miglioramento.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Algorithm_Project_2019.dir/select_miglioramento.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Algorithm_Project_2019.dir/select_miglioramento.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Algorithm_Project_2019.dir/select_miglioramento.c.o   -c /cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/select_miglioramento.c
 
 CMakeFiles/Algorithm_Project_2019.dir/select_miglioramento.c.i: cmake_force
@@ -124,7 +111,7 @@ CMakeFiles/Algorithm_Project_2019.dir/select_miglioramento.c.s: cmake_force
 
 CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.o: CMakeFiles/Algorithm_Project_2019.dir/flags.make
 CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.o: ../sort_modifica.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.o   -c /cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.c
 
 CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.i: cmake_force
@@ -137,7 +124,7 @@ CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.s: cmake_force
 
 CMakeFiles/Algorithm_Project_2019.dir/sort.c.o: CMakeFiles/Algorithm_Project_2019.dir/flags.make
 CMakeFiles/Algorithm_Project_2019.dir/sort.c.o: ../sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Algorithm_Project_2019.dir/sort.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Algorithm_Project_2019.dir/sort.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Algorithm_Project_2019.dir/sort.c.o   -c /cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sort.c
 
 CMakeFiles/Algorithm_Project_2019.dir/sort.c.i: cmake_force
@@ -152,7 +139,6 @@ CMakeFiles/Algorithm_Project_2019.dir/sort.c.s: cmake_force
 Algorithm_Project_2019_OBJECTS = \
 "CMakeFiles/Algorithm_Project_2019.dir/main.c.o" \
 "CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.o" \
-"CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.o" \
 "CMakeFiles/Algorithm_Project_2019.dir/sum.c.o" \
 "CMakeFiles/Algorithm_Project_2019.dir/select_miglioramento.c.o" \
 "CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.o" \
@@ -163,14 +149,13 @@ Algorithm_Project_2019_EXTERNAL_OBJECTS =
 
 Algorithm_Project_2019.exe: CMakeFiles/Algorithm_Project_2019.dir/main.c.o
 Algorithm_Project_2019.exe: CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.o
-Algorithm_Project_2019.exe: CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.o
 Algorithm_Project_2019.exe: CMakeFiles/Algorithm_Project_2019.dir/sum.c.o
 Algorithm_Project_2019.exe: CMakeFiles/Algorithm_Project_2019.dir/select_miglioramento.c.o
 Algorithm_Project_2019.exe: CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.o
 Algorithm_Project_2019.exe: CMakeFiles/Algorithm_Project_2019.dir/sort.c.o
 Algorithm_Project_2019.exe: CMakeFiles/Algorithm_Project_2019.dir/build.make
 Algorithm_Project_2019.exe: CMakeFiles/Algorithm_Project_2019.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable Algorithm_Project_2019.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable Algorithm_Project_2019.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Algorithm_Project_2019.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

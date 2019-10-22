@@ -7,34 +7,34 @@
 #include "sum.h"
 #include "sort.h"
 
-double weighted_median_sort(Array *ptr){
-    double W = sum_partitions(ptr, 0, ptr->size-1);
-    sort_array(ptr);
+double weighted_median_sort(double *ptr, int size){
+    double W = sum_partitions(ptr, 0, size-1);
+    sort_array(ptr, size);
     double sum = 0;
-    for (int i=0; i<ptr->size; i++){
-        sum += ptr->array[i];
+    for (int i=0; i<size; i++){
+        sum += ptr[i];
         if (sum > W/2){
-            return ptr->array[i];
+            return ptr[i];
         }
     }
     return -1;
 
 }
-double weighted_median_optimal(Array *ptr){
+double weighted_median_optimal(double *ptr, int size){
     int p = 0;
-    int r = ptr->size-1;
+    int r = size-1;
     double w = sum_partitions(ptr, p, r);
     return weighted_median_optimal_rec(ptr, p, r, floor(w/2.0), floor(w/2.0));
 }
-double weighted_median_optimal_rec(Array *ptr, int p, int r, double targetsx, double targetdx){
+double weighted_median_optimal_rec(double *ptr, int p, int r, double targetsx, double targetdx){
     if (r==p){
-        return ptr->array[p];
+        return ptr[p];
     }
     if (r-p == 1){
-        if (ptr->array[p] >= ptr->array[r]){
-            return ptr->array[p];
+        if (ptr[p] >= ptr[r]){
+            return ptr[p];
         } else {
-            return ptr->array[r];
+            return ptr[r];
         }
     }
     int q = partition_select(ptr, p, r);
@@ -42,7 +42,7 @@ double weighted_median_optimal_rec(Array *ptr, int p, int r, double targetsx, do
     double wg = sum_partitions(ptr, q+1, r);
     //printArray(ptr);
     if (wl <= targetsx && wg < targetdx ){
-        return ptr->array[q];
+        return ptr[q];
     } else {
         if (wl > wg){
             weighted_median_optimal_rec(ptr, p, q, targetsx, targetdx-wg);

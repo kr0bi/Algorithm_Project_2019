@@ -6,25 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
-stdio.h
--
-stdlib.h
--
-
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/select_miglioramento.c
-select_miglioramento.h
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/select_miglioramento.h
+/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.c
 sort_modifica.h
 /cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.h
-math.h
--
-
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/select_miglioramento.h
-arrayList.h
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
 
 /cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.h
-arrayList.h
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h
 

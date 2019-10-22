@@ -123,33 +123,6 @@ Algorithm_Project_2019/fast:
 	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/build
 .PHONY : Algorithm_Project_2019/fast
 
-arrayList.o: arrayList.c.o
-
-.PHONY : arrayList.o
-
-# target to build an object file
-arrayList.c.o:
-	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.o
-.PHONY : arrayList.c.o
-
-arrayList.i: arrayList.c.i
-
-.PHONY : arrayList.i
-
-# target to preprocess a source file
-arrayList.c.i:
-	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.i
-.PHONY : arrayList.c.i
-
-arrayList.s: arrayList.c.s
-
-.PHONY : arrayList.s
-
-# target to generate assembly for a file
-arrayList.c.s:
-	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/arrayList.c.s
-.PHONY : arrayList.c.s
-
 main.o: main.c.o
 
 .PHONY : main.o
@@ -321,9 +294,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Algorithm_Project_2019"
 	@echo "... edit_cache"
-	@echo "... arrayList.o"
-	@echo "... arrayList.i"
-	@echo "... arrayList.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

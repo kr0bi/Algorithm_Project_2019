@@ -74,12 +74,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/arrayList.c">
-			<Option target="Algorithm_Project_2019"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/arrayList.h">
-			<Option target="Algorithm_Project_2019"/>
-		</Unit>
 		<Unit filename="/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/main.c">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>
