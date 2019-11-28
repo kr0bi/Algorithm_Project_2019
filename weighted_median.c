@@ -4,7 +4,7 @@
 
 #include "weighted_median.h"
 #include "sum.h"
-#include "sort_modifica.h"
+#include "sort.h"
 
 double weighted_median_sort(double *ptr, int size){
     double W = sum_partitions(ptr, 0, size-1);

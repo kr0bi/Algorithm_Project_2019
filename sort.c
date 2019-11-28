@@ -2,7 +2,7 @@
 // Created by daniele on 10/17/2019.
 //
 
-#include "sort_modifica.h"
+#include "sort.h"
 
 void sort (double *ptr, int size){
     mergesort(ptr, 0, size-1, size);

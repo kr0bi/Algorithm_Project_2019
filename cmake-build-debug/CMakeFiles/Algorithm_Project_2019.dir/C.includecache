@@ -6,19 +6,21 @@
 
 #IncludeRegexTransform: 
 
+/home/daniele/CLionProjects/Algorithm_Project_2019/algorithm.c
+stdio.h
+-
+weighted_median.h
+/home/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.h
+
+/home/daniele/CLionProjects/Algorithm_Project_2019/algorithm.h
+
 /home/daniele/CLionProjects/Algorithm_Project_2019/main.c
 stdio.h
 -
 weighted_median.h
 /home/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.h
-sum.h
-/home/daniele/CLionProjects/Algorithm_Project_2019/sum.h
-sort_modifica.h
-/home/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.h
-
-/home/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.h
-
-/home/daniele/CLionProjects/Algorithm_Project_2019/sum.h
+algorithm.h
+/home/daniele/CLionProjects/Algorithm_Project_2019/algorithm.h
 
 /home/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.h
 math.h
