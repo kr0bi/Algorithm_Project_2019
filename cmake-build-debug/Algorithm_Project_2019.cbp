@@ -87,10 +87,10 @@
 		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/main.c">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>
-		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.c">
+		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/sort.c">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>
-		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.h">
+		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/sort.h">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>
 		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/sum.c">

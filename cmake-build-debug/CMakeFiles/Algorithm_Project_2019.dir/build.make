@@ -96,18 +96,18 @@ CMakeFiles/Algorithm_Project_2019.dir/sum.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Algorithm_Project_2019.dir/sum.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniele/CLionProjects/Algorithm_Project_2019/sum.c -o CMakeFiles/Algorithm_Project_2019.dir/sum.c.s
 
-CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.o: CMakeFiles/Algorithm_Project_2019.dir/flags.make
-CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.o: ../sort_modifica.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.o   -c /home/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.c
+CMakeFiles/Algorithm_Project_2019.dir/sort.c.o: CMakeFiles/Algorithm_Project_2019.dir/flags.make
+CMakeFiles/Algorithm_Project_2019.dir/sort.c.o: ../sort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Algorithm_Project_2019.dir/sort.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Algorithm_Project_2019.dir/sort.c.o   -c /home/daniele/CLionProjects/Algorithm_Project_2019/sort.c
 
-CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.c > CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.i
+CMakeFiles/Algorithm_Project_2019.dir/sort.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Algorithm_Project_2019.dir/sort.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniele/CLionProjects/Algorithm_Project_2019/sort.c > CMakeFiles/Algorithm_Project_2019.dir/sort.c.i
 
-CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.c -o CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.s
+CMakeFiles/Algorithm_Project_2019.dir/sort.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Algorithm_Project_2019.dir/sort.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniele/CLionProjects/Algorithm_Project_2019/sort.c -o CMakeFiles/Algorithm_Project_2019.dir/sort.c.s
 
 CMakeFiles/Algorithm_Project_2019.dir/algorithm.c.o: CMakeFiles/Algorithm_Project_2019.dir/flags.make
 CMakeFiles/Algorithm_Project_2019.dir/algorithm.c.o: ../algorithm.c
@@ -140,7 +140,7 @@ Algorithm_Project_2019_OBJECTS = \
 "CMakeFiles/Algorithm_Project_2019.dir/main.c.o" \
 "CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.o" \
 "CMakeFiles/Algorithm_Project_2019.dir/sum.c.o" \
-"CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.o" \
+"CMakeFiles/Algorithm_Project_2019.dir/sort.c.o" \
 "CMakeFiles/Algorithm_Project_2019.dir/algorithm.c.o" \
 "CMakeFiles/Algorithm_Project_2019.dir/utilities.c.o"
 
@@ -150,7 +150,7 @@ Algorithm_Project_2019_EXTERNAL_OBJECTS =
 Algorithm_Project_2019: CMakeFiles/Algorithm_Project_2019.dir/main.c.o
 Algorithm_Project_2019: CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.o
 Algorithm_Project_2019: CMakeFiles/Algorithm_Project_2019.dir/sum.c.o
-Algorithm_Project_2019: CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.o
+Algorithm_Project_2019: CMakeFiles/Algorithm_Project_2019.dir/sort.c.o
 Algorithm_Project_2019: CMakeFiles/Algorithm_Project_2019.dir/algorithm.c.o
 Algorithm_Project_2019: CMakeFiles/Algorithm_Project_2019.dir/utilities.c.o
 Algorithm_Project_2019: CMakeFiles/Algorithm_Project_2019.dir/build.make

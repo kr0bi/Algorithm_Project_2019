@@ -8,8 +8,8 @@ CMakeFiles/Algorithm_Project_2019.dir/main.c.o: ../algorithm.h
 CMakeFiles/Algorithm_Project_2019.dir/main.c.o: ../main.c
 CMakeFiles/Algorithm_Project_2019.dir/main.c.o: ../weighted_median.h
 
-CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.o: ../sort_modifica.c
-CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.o: ../sort_modifica.h
+CMakeFiles/Algorithm_Project_2019.dir/sort.c.o: ../sort.c
+CMakeFiles/Algorithm_Project_2019.dir/sort.c.o: ../sort.h
 
 CMakeFiles/Algorithm_Project_2019.dir/sum.c.o: ../sum.c
 CMakeFiles/Algorithm_Project_2019.dir/sum.c.o: ../sum.h
@@ -17,7 +17,7 @@ CMakeFiles/Algorithm_Project_2019.dir/sum.c.o: ../sum.h
 CMakeFiles/Algorithm_Project_2019.dir/utilities.c.o: ../utilities.c
 CMakeFiles/Algorithm_Project_2019.dir/utilities.c.o: ../utilities.h
 
-CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.o: ../sort_modifica.h
+CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.o: ../sort.h
 CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.o: ../sum.h
 CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.o: ../weighted_median.c
 CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.o: ../weighted_median.h

@@ -177,32 +177,32 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/main.c.s
 .PHONY : main.c.s
 
-sort_modifica.o: sort_modifica.c.o
+sort.o: sort.c.o
 
-.PHONY : sort_modifica.o
+.PHONY : sort.o
 
 # target to build an object file
-sort_modifica.c.o:
-	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.o
-.PHONY : sort_modifica.c.o
+sort.c.o:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/sort.c.o
+.PHONY : sort.c.o
 
-sort_modifica.i: sort_modifica.c.i
+sort.i: sort.c.i
 
-.PHONY : sort_modifica.i
+.PHONY : sort.i
 
 # target to preprocess a source file
-sort_modifica.c.i:
-	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.i
-.PHONY : sort_modifica.c.i
+sort.c.i:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/sort.c.i
+.PHONY : sort.c.i
 
-sort_modifica.s: sort_modifica.c.s
+sort.s: sort.c.s
 
-.PHONY : sort_modifica.s
+.PHONY : sort.s
 
 # target to generate assembly for a file
-sort_modifica.c.s:
-	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.s
-.PHONY : sort_modifica.c.s
+sort.c.s:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/sort.c.s
+.PHONY : sort.c.s
 
 sum.o: sum.c.o
 
@@ -300,9 +300,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... sort_modifica.o"
-	@echo "... sort_modifica.i"
-	@echo "... sort_modifica.s"
+	@echo "... sort.o"
+	@echo "... sort.i"
+	@echo "... sort.s"
 	@echo "... sum.o"
 	@echo "... sum.i"
 	@echo "... sum.s"
