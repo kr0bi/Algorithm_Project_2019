@@ -17,5 +17,4 @@ double weighted_median_sort(double *ptr, int size){
         }
     }
     return -1;
-
 }
