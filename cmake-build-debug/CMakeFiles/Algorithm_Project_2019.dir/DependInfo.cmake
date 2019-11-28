@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/main.c" "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles/Algorithm_Project_2019.dir/main.c.o"
-  "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/select_miglioramento.c" "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles/Algorithm_Project_2019.dir/select_miglioramento.c.o"
-  "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sort.c" "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles/Algorithm_Project_2019.dir/sort.c.o"
-  "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.c" "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.o"
-  "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sum.c" "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles/Algorithm_Project_2019.dir/sum.c.o"
-  "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.c" "/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.o"
+  "/home/daniele/CLionProjects/Algorithm_Project_2019/main.c" "/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles/Algorithm_Project_2019.dir/main.c.o"
+  "/home/daniele/CLionProjects/Algorithm_Project_2019/select_miglioramento.c" "/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles/Algorithm_Project_2019.dir/select_miglioramento.c.o"
+  "/home/daniele/CLionProjects/Algorithm_Project_2019/sort.c" "/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles/Algorithm_Project_2019.dir/sort.c.o"
+  "/home/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.c" "/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles/Algorithm_Project_2019.dir/sort_modifica.c.o"
+  "/home/daniele/CLionProjects/Algorithm_Project_2019/sum.c" "/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles/Algorithm_Project_2019.dir/sum.c.o"
+  "/home/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.c" "/home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
