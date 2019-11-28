@@ -4,10 +4,8 @@
 
 #include "sort_modifica.h"
 
-void sort (double *ptr, double *fine_ptr){
-    int p = ptr;
-    int q = fine_ptr;
-    mergesort(ptr, p, q-1, (q-p+1)/sizeof(double));
+void sort (double *ptr, int size){
+    mergesort(ptr, 0, size-1, size);
 }
 
 void merge (double *ptr, int p, int q, int r, int size){

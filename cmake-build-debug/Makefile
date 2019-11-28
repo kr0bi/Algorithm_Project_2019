@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/daniele/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /home/daniele/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/daniele/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /home/daniele/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019
+CMAKE_SOURCE_DIR = /home/daniele/CLionProjects/Algorithm_Project_2019
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug
+CMAKE_BINARY_DIR = /home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_201
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/daniele/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/daniele/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/daniele/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/daniele/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles /cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles /home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -149,60 +149,6 @@ main.s: main.c.s
 main.c.s:
 	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/main.c.s
 .PHONY : main.c.s
-
-select_miglioramento.o: select_miglioramento.c.o
-
-.PHONY : select_miglioramento.o
-
-# target to build an object file
-select_miglioramento.c.o:
-	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/select_miglioramento.c.o
-.PHONY : select_miglioramento.c.o
-
-select_miglioramento.i: select_miglioramento.c.i
-
-.PHONY : select_miglioramento.i
-
-# target to preprocess a source file
-select_miglioramento.c.i:
-	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/select_miglioramento.c.i
-.PHONY : select_miglioramento.c.i
-
-select_miglioramento.s: select_miglioramento.c.s
-
-.PHONY : select_miglioramento.s
-
-# target to generate assembly for a file
-select_miglioramento.c.s:
-	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/select_miglioramento.c.s
-.PHONY : select_miglioramento.c.s
-
-sort.o: sort.c.o
-
-.PHONY : sort.o
-
-# target to build an object file
-sort.c.o:
-	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/sort.c.o
-.PHONY : sort.c.o
-
-sort.i: sort.c.i
-
-.PHONY : sort.i
-
-# target to preprocess a source file
-sort.c.i:
-	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/sort.c.i
-.PHONY : sort.c.i
-
-sort.s: sort.c.s
-
-.PHONY : sort.s
-
-# target to generate assembly for a file
-sort.c.s:
-	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/sort.c.s
-.PHONY : sort.c.s
 
 sort_modifica.o: sort_modifica.c.o
 
@@ -297,12 +243,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... select_miglioramento.o"
-	@echo "... select_miglioramento.i"
-	@echo "... select_miglioramento.s"
-	@echo "... sort.o"
-	@echo "... sort.i"
-	@echo "... sort.s"
 	@echo "... sort_modifica.o"
 	@echo "... sort_modifica.i"
 	@echo "... sort_modifica.s"

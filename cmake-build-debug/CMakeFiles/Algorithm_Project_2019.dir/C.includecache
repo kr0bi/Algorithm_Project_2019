@@ -6,9 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.c
+/home/daniele/CLionProjects/Algorithm_Project_2019/main.c
+stdio.h
+-
+weighted_median.h
+/home/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.h
+sum.h
+/home/daniele/CLionProjects/Algorithm_Project_2019/sum.h
 sort_modifica.h
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.h
+/home/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.h
 
-/cygdrive/c/Users/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.h
+/home/daniele/CLionProjects/Algorithm_Project_2019/sort_modifica.h
+
+/home/daniele/CLionProjects/Algorithm_Project_2019/sum.h
+
+/home/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.h
+math.h
+-
 
