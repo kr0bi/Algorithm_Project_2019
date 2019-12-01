@@ -99,12 +99,6 @@
 		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/sum.h">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>
-		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/utilities.c">
-			<Option target="Algorithm_Project_2019"/>
-		</Unit>
-		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/utilities.h">
-			<Option target="Algorithm_Project_2019"/>
-		</Unit>
 		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.c">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>

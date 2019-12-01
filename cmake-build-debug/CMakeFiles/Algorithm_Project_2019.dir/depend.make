@@ -12,10 +12,6 @@ CMakeFiles/Algorithm_Project_2019.dir/sort.c.o: ../sort.c
 CMakeFiles/Algorithm_Project_2019.dir/sort.c.o: ../sort.h
 
 CMakeFiles/Algorithm_Project_2019.dir/sum.c.o: ../sum.c
-CMakeFiles/Algorithm_Project_2019.dir/sum.c.o: ../sum.h
-
-CMakeFiles/Algorithm_Project_2019.dir/utilities.c.o: ../utilities.c
-CMakeFiles/Algorithm_Project_2019.dir/utilities.c.o: ../utilities.h
 
 CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.o: ../sort.h
 CMakeFiles/Algorithm_Project_2019.dir/weighted_median.c.o: ../sum.h

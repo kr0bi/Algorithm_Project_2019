@@ -231,33 +231,6 @@ sum.c.s:
 	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/sum.c.s
 .PHONY : sum.c.s
 
-utilities.o: utilities.c.o
-
-.PHONY : utilities.o
-
-# target to build an object file
-utilities.c.o:
-	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/utilities.c.o
-.PHONY : utilities.c.o
-
-utilities.i: utilities.c.i
-
-.PHONY : utilities.i
-
-# target to preprocess a source file
-utilities.c.i:
-	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/utilities.c.i
-.PHONY : utilities.c.i
-
-utilities.s: utilities.c.s
-
-.PHONY : utilities.s
-
-# target to generate assembly for a file
-utilities.c.s:
-	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/utilities.c.s
-.PHONY : utilities.c.s
-
 weighted_median.o: weighted_median.c.o
 
 .PHONY : weighted_median.o
@@ -306,9 +279,6 @@ help:
 	@echo "... sum.o"
 	@echo "... sum.i"
 	@echo "... sum.s"
-	@echo "... utilities.o"
-	@echo "... utilities.i"
-	@echo "... utilities.s"
 	@echo "... weighted_median.o"
 	@echo "... weighted_median.i"
 	@echo "... weighted_median.s"
