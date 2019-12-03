@@ -3,6 +3,7 @@
 //
 
 #include "analisi_stima_dei_tempi.h"
+#include <stdio.h>>
 #include "algorithm.h"
 #include <time.h>
 double granularita (){
@@ -12,8 +13,6 @@ double granularita (){
         t1 = clock();
     }
     return (double)(t1-t0)/CLOCKS_PER_SEC;
-
-
 }
 double get_t_min(double granularita, double tolleranza){
     return (double)granularita/tolleranza;
@@ -48,4 +47,15 @@ double calcola_rip(double *array, int size, double t_min){
         }
     }
     return max;
+}
+
+void calcolo_dei_tempi(double *array, int size, double rip){
+    clock_t t0 = clock();
+    for (int i = 1; i<rip; i++){
+        start_algorithm(array, size);
+    }
+    clock_t t1 = clock();
+    double t_tot = (double)t1-t0; //tempo totale di esecuzione
+    double t_sing = t_tot/rip; //tempo medio di esecuzione
+    printf("t_tot: %lf\nt_medio: %lf", t_tot, t_sing);
 }
