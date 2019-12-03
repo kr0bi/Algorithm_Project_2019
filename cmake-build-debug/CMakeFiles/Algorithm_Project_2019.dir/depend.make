@@ -4,7 +4,12 @@
 CMakeFiles/Algorithm_Project_2019.dir/algorithm.c.o: ../algorithm.c
 CMakeFiles/Algorithm_Project_2019.dir/algorithm.c.o: ../weighted_median.h
 
+CMakeFiles/Algorithm_Project_2019.dir/analisi_stima_dei_tempi.c.o: ../algorithm.h
+CMakeFiles/Algorithm_Project_2019.dir/analisi_stima_dei_tempi.c.o: ../analisi_stima_dei_tempi.c
+CMakeFiles/Algorithm_Project_2019.dir/analisi_stima_dei_tempi.c.o: ../analisi_stima_dei_tempi.h
+
 CMakeFiles/Algorithm_Project_2019.dir/main.c.o: ../algorithm.h
+CMakeFiles/Algorithm_Project_2019.dir/main.c.o: ../analisi_stima_dei_tempi.h
 CMakeFiles/Algorithm_Project_2019.dir/main.c.o: ../main.c
 CMakeFiles/Algorithm_Project_2019.dir/main.c.o: ../weighted_median.h
 

@@ -150,6 +150,33 @@ algorithm.c.s:
 	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/algorithm.c.s
 .PHONY : algorithm.c.s
 
+analisi_stima_dei_tempi.o: analisi_stima_dei_tempi.c.o
+
+.PHONY : analisi_stima_dei_tempi.o
+
+# target to build an object file
+analisi_stima_dei_tempi.c.o:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/analisi_stima_dei_tempi.c.o
+.PHONY : analisi_stima_dei_tempi.c.o
+
+analisi_stima_dei_tempi.i: analisi_stima_dei_tempi.c.i
+
+.PHONY : analisi_stima_dei_tempi.i
+
+# target to preprocess a source file
+analisi_stima_dei_tempi.c.i:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/analisi_stima_dei_tempi.c.i
+.PHONY : analisi_stima_dei_tempi.c.i
+
+analisi_stima_dei_tempi.s: analisi_stima_dei_tempi.c.s
+
+.PHONY : analisi_stima_dei_tempi.s
+
+# target to generate assembly for a file
+analisi_stima_dei_tempi.c.s:
+	$(MAKE) -f CMakeFiles/Algorithm_Project_2019.dir/build.make CMakeFiles/Algorithm_Project_2019.dir/analisi_stima_dei_tempi.c.s
+.PHONY : analisi_stima_dei_tempi.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -270,6 +297,9 @@ help:
 	@echo "... algorithm.o"
 	@echo "... algorithm.i"
 	@echo "... algorithm.s"
+	@echo "... analisi_stima_dei_tempi.o"
+	@echo "... analisi_stima_dei_tempi.i"
+	@echo "... analisi_stima_dei_tempi.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

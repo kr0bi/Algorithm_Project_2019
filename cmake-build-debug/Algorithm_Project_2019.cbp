@@ -84,6 +84,12 @@
 		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/algorithm.h">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>
+		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/analisi_stima_dei_tempi.c">
+			<Option target="Algorithm_Project_2019"/>
+		</Unit>
+		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/analisi_stima_dei_tempi.h">
+			<Option target="Algorithm_Project_2019"/>
+		</Unit>
 		<Unit filename="/home/daniele/CLionProjects/Algorithm_Project_2019/main.c">
 			<Option target="Algorithm_Project_2019"/>
 		</Unit>

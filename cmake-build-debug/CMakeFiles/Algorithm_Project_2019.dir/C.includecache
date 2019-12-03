@@ -8,6 +8,8 @@
 
 /home/daniele/CLionProjects/Algorithm_Project_2019/algorithm.h
 
+/home/daniele/CLionProjects/Algorithm_Project_2019/analisi_stima_dei_tempi.h
+
 /home/daniele/CLionProjects/Algorithm_Project_2019/main.c
 stdio.h
 -
@@ -17,6 +19,8 @@ weighted_median.h
 /home/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.h
 algorithm.h
 /home/daniele/CLionProjects/Algorithm_Project_2019/algorithm.h
+analisi_stima_dei_tempi.h
+/home/daniele/CLionProjects/Algorithm_Project_2019/analisi_stima_dei_tempi.h
 
 /home/daniele/CLionProjects/Algorithm_Project_2019/weighted_median.h
 math.h
