@@ -27,7 +27,9 @@ void start_project() {
             array = realloc(array, size*sizeof(double));
         }
     }
-    printf("rip: %lf\n", calcola_rip(array, read, get_t_min(result, TOLLERANZA)));
+
+    calcolo_dei_tempi(array, read, calcola_rip(array, read, get_t_min(result, TOLLERANZA)));
+    //printf("rip: %lf\n", calcola_rip(array, read, get_t_min(result, TOLLERANZA)));
     //start_algorithm(array, read);
 }
 
