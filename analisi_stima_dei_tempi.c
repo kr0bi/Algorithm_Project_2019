@@ -18,15 +18,24 @@ double granularita (){
 double get_t_min(double granularita, double tolleranza){
     return (double)(granularita/tolleranza);
 }
-double calcola_rip(void (**handler_of_functions)(double*, int), int number_of_methods, double *array, int size, double t_min){
+double calcola_rip(void (**handler_of_functions)(double*, int, double*), int number_of_methods, double *array, int size, double t_min){
     clock_t t0, t1;
     int rip = 1;
     while ((double)(t1-t0)<=t_min){
         rip *= 2;
         t0 = clock();
         for (int i = 1; i<rip; i++){
-            for (int j=0; j<number_of_methods; j++) {
-                (*handler_of_functions[j])(array, size);
+            switch (number_of_methods){
+                case 1:
+                    (*handler_of_functions[1])(array, size, NULL);
+                    break;
+                case 2:
+                    (*handler_of_functions[0])(array, size, array);
+                    (*handler_of_functions[1])(array, size, NULL);
+                    break;
+                default:
+                    fprintf(stderr, "\nerrore: numero di metodi non supportato\n");
+                    break;
             }
         }
         t1 = clock();
@@ -38,8 +47,17 @@ double calcola_rip(void (**handler_of_functions)(double*, int), int number_of_me
         rip = (max+min)/2;
         t0 = clock();
         for (int i =1 ; i<rip; i++){
-            for (int j=0; i<number_of_methods; j++) {
-                (*handler_of_functions[j])(array, size);
+            switch (number_of_methods){
+                case 1:
+                    (*handler_of_functions[1])(array, size, NULL);
+                    break;
+                case 2:
+                    (*handler_of_functions[0])(array, size, array);
+                    (*handler_of_functions[1])(array, size, NULL);
+                    break;
+                default:
+                    fprintf(stderr, "\nerrore: numero di metodi non supportato\n");
+                    break;
             }
         }
         t1 = clock();
@@ -53,8 +71,9 @@ double calcola_rip(void (**handler_of_functions)(double*, int), int number_of_me
     return max;
 }
 
-void prepara(double* array, int size){
-
+void prepara(double* array, int size, double* array_to_copy){
+    double *a = array;
+    double *b = array_to_copy;
 }
 /*double calcola_rip(double *array, int size, double t_min){
     clock_t t0, t1;
