@@ -4,6 +4,7 @@
 #include "algorithm.h"
 #include "analisi_stima_dei_tempi.h"
 #define TOLLERANZA 0.02
+#define NUMBER_OF_ARGUMENTS 2
 
 void start_project();
 
@@ -31,9 +32,16 @@ void start_project() {
             array = realloc(array, size*sizeof(double));
         }
     }
+
+    void (*p[2]) (double* array, int size, double *arrayToCopy);
+    p[0]=prepara;
+    p[1]=start_algorithm;
+
     //calcolo_dei_tempi(array, read, calcola_rip(array, read, get_t_min(result, TOLLERANZA)));
-    printf("rip: %lf\n", calcola_rip(array, read, get_t_min(result, TOLLERANZA)));
-    printf("rip: %lf\n", calcola_rip_version_function(start_algorithm, array, read, get_t_min(result, TOLLERANZA)));
+    //printf("rip: %lf\n", calcola_rip(array, read, get_t_min(result, TOLLERANZA)));
+
+    printf("rip: %lf\n", calcola_rip(p, 2, array, read, get_t_min(result, TOLLERANZA)));
+
     //start_algorithm_print(array, read);
 }
 
