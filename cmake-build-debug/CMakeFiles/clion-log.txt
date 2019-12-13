@@ -1,4 +1,4 @@
-/home/daniele/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/daniele/CLionProjects/Algorithm_Project_2019
+/home/daniele/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/193.5233.144/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/daniele/CLionProjects/Algorithm_Project_2019
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/daniele/CLionProjects/Algorithm_Project_2019/cmake-build-debug
