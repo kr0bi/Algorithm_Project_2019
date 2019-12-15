@@ -9,6 +9,10 @@
 /home/daniele/CLionProjects/Algorithm_Project_2019/algorithm.h
 
 /home/daniele/CLionProjects/Algorithm_Project_2019/analisi_stima_dei_tempi.h
+stdlib.h
+-
+bits/types/FILE.h
+-
 
 /home/daniele/CLionProjects/Algorithm_Project_2019/main.c
 stdio.h
