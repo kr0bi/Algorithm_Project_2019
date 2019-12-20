@@ -12,7 +12,7 @@ double weighted_median_sort(double *ptr, int size){
     double sum = 0;
     for (int i=0; i<size; i++){
         sum += ptr[i];
-        if (sum > W/2){
+        if (sum >= W/2){
             return ptr[i];
         }
     }
