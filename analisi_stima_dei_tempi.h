@@ -12,17 +12,16 @@
 double granularita();
 double get_t_min(double granularita, double tolleranza);
 
-double calcola_rip(void (**handler_of_methods)(double*, long, double*), int number_of_methods, double *array, long size, double t_min);
-void prepara (double* array, long size, double* array_to_copy);
-double tempo_medio_netto (void (**handler_of_methods)(double*, long, double*), int number_of_methods,
-        double *array, long size, double *array_to_copy, double t_min);
-void calcolo_dei_tempi(void (*handler)(double*, int), double *array, long size, double rip);
+double calcola_rip(void (**handler_of_methods)(double*, int, double*),
+        int number_of_methods, double *array, int size, double t_min, double *seed);
+void prepara (double* array, int size, double* seed);
+double tempo_medio_netto (void (**handler_of_methods)(double*, int, double*),
+        int number_of_methods,
+        double *array, int size, double t_min, double *seed);
+void calcolo_dei_tempi(void (*handler)(double*, int), double *array, int size, double rip);
 
 double randomGenerator (double *seed);
 
-void popola_array(double *array, long size, double *seed);
-
-void misurazione (void (**handler_of_methods)(double*, long, double*), int number_of_methods,
-        double *array, long size, double *array_to_copy, double t_min, int numero_campioni, int zalpa, double delta_input, double *seed,
-        FILE *file);
+void misurazione (void (**handler_of_methods)(double*, int, double*), int number_of_methods,
+        double *array, int size, double t_min, int numero_campioni, double zalpa, double delta_input, double *seed);
 #endif //ALGORITHM_PROJECT_2019_ANALISI_STIMA_DEI_TEMPI_H

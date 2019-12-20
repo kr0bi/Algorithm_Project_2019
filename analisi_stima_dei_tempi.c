@@ -9,8 +9,9 @@
 #include <time.h>
 #include <math.h>
 
-void select_method(void (**handler_of_functions)(double *, long, double *), int number_of_methods, const double *array,
-                   long size);
+void select_method(void (**handler_of_functions)(double *, int, double *),
+        int number_of_methods, double *array,
+        int size, double *seed);
 
 double granularita (){
     clock_t t0 = clock();
@@ -23,14 +24,17 @@ double granularita (){
 double get_t_min(double granularita, double tolleranza){
     return (double)(granularita/tolleranza);
 }
-double calcola_rip(void (**handler_of_functions)(double*, long, double*), int number_of_methods, double *array, long size, double t_min){
-    clock_t t0=clock(), t1=clock();
+double calcola_rip(void (**handler_of_functions)(double*, int, double*),
+        int number_of_methods, double *array, int size, double t_min, double *seed){
+    //provare con t0 = 0 e t1=0;
+    //clock_t t0=clock(), t1=clock();
+    clock_t t0=0, t1=0;
     int rip = 1;
     while ((double)(t1-t0)<=t_min){
         rip *= 2;
         t0 = clock();
-        for (int i = 1; i<rip; i++){
-            select_method(handler_of_functions, number_of_methods, array, size);
+        for (int i = 1; i<=rip; i++){
+            select_method(handler_of_functions, number_of_methods, array, size, seed);
         }
         t1 = clock();
     }
@@ -40,8 +44,8 @@ double calcola_rip(void (**handler_of_functions)(double*, long, double*), int nu
     while ((max - min)>= cicli_errati){
         rip = (max+min)/2;
         t0 = clock();
-        for (int i =1 ; i<rip; i++){
-            select_method(handler_of_functions, number_of_methods, array, size);
+        for (int i =1 ; i<=rip; i++){
+            select_method(handler_of_functions, number_of_methods, array, size, seed);
         }
         t1 = clock();
         if ((double)(t1-t0)<=t_min){
@@ -54,14 +58,15 @@ double calcola_rip(void (**handler_of_functions)(double*, long, double*), int nu
     return max;
 }
 
-void select_method(void (**handler_of_functions)(double *, long, double *), int number_of_methods, const double *array,
-                   long size) {
+void select_method(void (**handler_of_functions)(double*, int, double*),
+        int number_of_methods, double *array,
+        int size, double *seed) {
     switch (number_of_methods){
         case 1:
-            (*handler_of_functions[1])(array, size, NULL);
+            (*handler_of_functions[1])(array, size, seed);
             break;
         case 2:
-            (*handler_of_functions[0])(array, size, array);
+            (*handler_of_functions[0])(array, size, seed);
             (*handler_of_functions[1])(array, size, NULL);
             break;
         default:
@@ -70,25 +75,28 @@ void select_method(void (**handler_of_functions)(double *, long, double *), int 
     }
 }
 
-void prepara(double* array, long size, double* array_to_copy){
-    for (long i=0; i<size; i++){
-        array[i]=array_to_copy[i];
+void prepara(double* array, int size, double* seed){
+    for (int i=0; i<size; i++){
+        array[i]=randomGenerator(seed);
     }
 }
 
-double tempo_medio_netto (void (**handler_of_methods)(double*, long, double*), int number_of_methods, double *array, long size, double* array_to_copy, double t_min){
-    double rip_tara = calcola_rip(handler_of_methods, 1, array, size, t_min);
-    double rip_lordo = calcola_rip(handler_of_methods, 2, array, size, t_min);
+double tempo_medio_netto (void (**handler_of_methods)(double*, int, double*),
+        int number_of_methods,
+        double *array, int size, double t_min,
+        double *seed){
+    double rip_tara = calcola_rip(handler_of_methods, 1, array, size, t_min, seed);
+    double rip_lordo = calcola_rip(handler_of_methods, 2, array, size, t_min, seed);
     clock_t t0 = clock();
-    for (int i=1; i<rip_tara; i++){
-        (*handler_of_methods[0])(array, size, array_to_copy);
+    for (int i=1; i<=rip_tara; i++){
+        (*handler_of_methods[0])(array, size, seed);
     }
     clock_t t1 = clock();
     clock_t t_tara = (t1-t0);
     t0 = clock();
-    for  (int i=1; i<rip_lordo; i++){
-        (*handler_of_methods[0])(array, size, array_to_copy);
-        (*handler_of_methods[1])(array, size, array_to_copy);
+    for  (int i=1; i<=rip_lordo; i++){
+        (*handler_of_methods[0])(array, size, seed);
+        (*handler_of_methods[1])(array, size, NULL);
     }
     t1 = clock();
     clock_t t_lordo = t1-t0;
@@ -98,9 +106,9 @@ double tempo_medio_netto (void (**handler_of_methods)(double*, long, double*), i
     return t_medio;
 }
 
-void calcolo_dei_tempi(void (*handler)(double*, int), double *array, long size, double rip){
+void calcolo_dei_tempi(void (*handler)(double*, int), double *array, int size, double rip){
     clock_t t0 = clock();
-    for (int i = 1; i<rip; i++){
+    for (int i = 1; i<=rip; i++){
         (*handler)(array, size);
     }
     clock_t t1 = clock();
@@ -115,7 +123,7 @@ double randomGenerator (double *seed){
     long q = 127773;
     long r = 2836;
     double hi = trunc((*seed)/q);
-    double lo = (*seed)-q*hi;
+    double lo = (*seed)-(q*hi);
     double test = a*lo-r*hi;
     if (test<0){
         *seed = test + m;
@@ -125,23 +133,16 @@ double randomGenerator (double *seed){
     return (*seed)/m;
 }
 
-void popola_array(double *array, long size, double *seed){
-    for (long i=0; i<size; i++){
-        array[i] = randomGenerator(seed);
-    }
-}
-
-void misurazione (void (**handler_of_methods)(double*, long, double*), int number_of_methods,
-                  double *array, long size, double *array_to_copy, double t_min, int numero_campioni, int zalpa, double delta_input, double *seed,
-                  FILE *file){
+void misurazione (void (**handler_of_methods)(double*, int, double*), int number_of_methods,
+                  double *array, int size,
+                  double t_min, int numero_campioni, double zalpa, double delta_input, double *seed){
     double t = 0;
     double sum_2 = 0;
     double cn = 0;
     double delta=0, e=0;
     do {
-        for (int i=1; i<numero_campioni; i++){
-            double m = tempo_medio_netto(handler_of_methods, number_of_methods, array, size, array_to_copy, t_min);
-            //printf("m: %lf", m);
+        for (int i=1; i<=numero_campioni; i++){
+            double m = tempo_medio_netto(handler_of_methods, number_of_methods, array, size, t_min, seed);
             t = t + m;
             sum_2 += m*m;
         }
@@ -151,15 +152,8 @@ void misurazione (void (**handler_of_methods)(double*, long, double*), int numbe
         double s = sqrt(sum_2/cn-(e*e));
         delta = (1/sqrt(cn))*zalpa*s;
 
-        //printf("t %lf\tcn %lf\n", t, cn);
-
-        double *new_seed = seed;
-        *new_seed = *seed+1;
-        popola_array(array, size, new_seed);
-        prepara(array_to_copy, size, array);
-
     } while (!(delta<delta_input));
-    fprintf(file, "%5ld\t%lf\t%lf\n", size, e, delta);
+    printf("%5d\t%lf\t%lf\n", size, e, delta);
 }
 
 
