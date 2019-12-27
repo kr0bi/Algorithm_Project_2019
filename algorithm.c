@@ -6,7 +6,7 @@
 
 void start_algorithm_print(double* array, int size){
     double med_sort = weighted_median_sort(array, size);
-    printf("%.8f\n", med_sort);
+    printf("%.15f\n", med_sort);
 }
 
 void start_algorithm(double* array, int size){
