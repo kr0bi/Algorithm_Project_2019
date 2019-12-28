@@ -13,9 +13,9 @@ void start_project();
 void start_testing();
 
 int main(int argc, char **argv){
-    //start_project();
+    start_project();
     //printf("%d\n", atoi(argv[1]));
-    start_testing(atoi(argv[1]));
+    //start_testing(atoi(argv[1]));
     return 0;
 }
 
