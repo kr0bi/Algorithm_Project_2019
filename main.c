@@ -14,11 +14,15 @@ void start_testing();
 
 int main(int argc, char **argv){
     start_project();
-    //printf("%d\n", atoi(argv[1]));
-    //start_testing(atoi(argv[1]));
+
+    //rimuovere il commento per far partire il testing
+    //start_testing(atoi(argv[1])); //prende un valore da standard input per la dimensione dell'array da utilizzare
     return 0;
 }
 
+/**
+ * metodo che fa partire il progetto
+ */
 void start_project() {
     int size = 1;
     double *array = malloc(size*sizeof(double));
@@ -32,8 +36,11 @@ void start_project() {
     start_algorithm_print(array, read);
 }
 
+/**
+ * metodo che far partire il testing del progetto
+ * @param size_input dimensione dell'array
+ */
 void start_testing(int size_input){
-    //printf("%d\n", size_input);
     double result = granularita();
 
     void (*p[2]) (double*, int, double*);
