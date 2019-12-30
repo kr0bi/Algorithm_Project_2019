@@ -7,8 +7,6 @@
 #include <stdlib.h>
 #include <bits/types/FILE.h>
 
-//long granularita2();
-//double get_t_min2 (long granularita, double tolleranza);
 double granularita();
 double get_t_min(double granularita, double tolleranza);
 

@@ -9,10 +9,22 @@
 #include <time.h>
 #include <math.h>
 
+/**
+ * permette di passare piu' metodi all'interno dello stesso
+ * @param handler_of_functions funzione che seleziona i metodi da passare
+ * @param number_of_methods numero di metodi da passare
+ * @param array
+ * @param size
+ * @param seed
+ */
 void select_method(void (**handler_of_functions)(double *, int, double *),
         int number_of_methods, double *array,
         int size, double *seed);
 
+/**
+ * calcolo della granularita dei tempi
+ * @return
+ */
 double granularita (){
     double t0 = (double)clock();
     double t1 = (double)clock();
@@ -20,68 +32,61 @@ double granularita (){
         t1 = (double)clock();
     }
     return (t1-t0);
-    /*struct timespec t0;
-    clock_gettime(CLOCK_MONOTONIC, &t0);
-    struct timespec t1;
-    clock_gettime(CLOCK_MONOTONIC, &t1);
-    while (t1.tv_nsec == t0.tv_nsec && t1.tv_sec == t0.tv_sec){
-        clock_gettime(CLOCK_MONOTONIC, &t1);
-    }
-    double res = (double)(t1.tv_sec-t0.tv_sec)*1000000000+(double)(t1.tv_nsec-t0.tv_nsec);
-    return res;*/
 }
+/**
+ * calcolo del tempo minimo
+ * @param granularita
+ * @param tolleranza
+ * @return
+ */
 double get_t_min(double granularita, double tolleranza){
     return (double)granularita/tolleranza;
 }
+/**
+ * calcolo del numero di ripetizioni che devono essere eseguite
+ * @param handler_of_functions
+ * @param number_of_methods
+ * @param array
+ * @param size
+ * @param t_min
+ * @param seed
+ * @return
+ */
 double calcola_rip(void (**handler_of_functions)(double*, int, double*),
         int number_of_methods, double *array, int size, double t_min, double *seed){
-    //provare con t0 = 0 e t1=0;
-    //clock_t t0=clock(), t1=clock();
 
     double seed_originale = *seed;
-
     double t0=0.0, t1=0.0;
-    /*struct timespec t0;
-    clock_gettime(CLOCK_MONOTONIC, &t0);
-    struct timespec t1;
-    clock_gettime(CLOCK_MONOTONIC, &t1);*/
-
     int rip = 1;
-    //while ((double)(t1-t0)<=t_min){
     while ((t1-t0)<=t_min){
         rip *= 2;
         t0 = (double)clock();
-        //clock_gettime(CLOCK_MONOTONIC, &t0);
         for (int i = 1; i<=rip; i++){
             select_method(handler_of_functions, number_of_methods, array, size, seed);
         }
         t1 = (double)clock();
-        //clock_gettime(CLOCK_MONOTONIC, &t1);
     }
     //resetto il seed perche' e' stato modificato
     *seed = seed_originale;
 
     int max = rip;
-    int min = rip/2; //prova se viene approssimato
+    int min = rip/2;
     int cicli_errati = 5;
     while ((max - min)>= cicli_errati){
         rip = (max+min)/2;
         t0 = (double)clock();
-        //clock_gettime(CLOCK_MONOTONIC, &t0);
         for (int i =1 ; i<=rip; i++){
             select_method(handler_of_functions, number_of_methods, array, size, seed);
         }
         t1 = (double)clock();
-        //clock_gettime(CLOCK_MONOTONIC, &t1);
         if ((t1-t0)<=t_min){
-        //if ((double)(t1.tv_sec-t0.tv_sec)*1000000000+(double)(t1.tv_nsec-t0.tv_nsec)<=t_min){
             min = rip;
         }
         else {
             max = rip;
         }
     }
-    *seed = seed_originale;
+    *seed = seed_originale; //ripristino il seed
     return max;
 }
 
@@ -102,12 +107,28 @@ void select_method(void (**handler_of_functions)(double*, int, double*),
     }
 }
 
+/**
+ * prepara l'array riempiendolo di valori generati pseudo casualmente
+ * @param array
+ * @param size
+ * @param seed
+ */
 void prepara(double* array, int size, double* seed){
     for (int i=0; i<size; i++){
         array[i]=randomGenerator(seed);
     }
 }
 
+/**
+ * calcolo del tempo medio netto
+ * @param handler_of_methods
+ * @param number_of_methods
+ * @param array
+ * @param size
+ * @param t_min
+ * @param seed
+ * @return
+ */
 double tempo_medio_netto (void (**handler_of_methods)(double*, int, double*),
         int number_of_methods,
         double *array, int size, double t_min,
@@ -116,59 +137,46 @@ double tempo_medio_netto (void (**handler_of_methods)(double*, int, double*),
     double rip_tara = calcola_rip(handler_of_methods, 1, array, size, t_min, seed);
     double rip_lordo = calcola_rip(handler_of_methods, 2, array, size, t_min, seed);
     double t0 = (double)clock();
-    /*struct timespec t0;
-    clock_gettime(CLOCK_MONOTONIC, &t0);*/
 
     for (int i=1; i<=rip_tara; i++){
         (*handler_of_methods[0])(array, size, seed);
     }
     double t1 = (double)clock();
-    /*struct timespec t1;
-    clock_gettime(CLOCK_MONOTONIC, &t1);*/
-
     double t_tara = (t1-t0);
-    //double t_tara = (double)(t1.tv_sec-t0.tv_sec)*1000000000+(double)(t1.tv_nsec-t0.tv_nsec);
-
     t0 = (double)clock();
-    //clock_gettime(CLOCK_MONOTONIC, &t0);
-
     for  (int i=1; i<=rip_lordo; i++){
         (*handler_of_methods[0])(array, size, seed);
         (*handler_of_methods[1])(array, size, NULL);
     }
-
     t1 = (double)clock();
-    //clock_gettime(CLOCK_MONOTONIC, &t1);
-
     double t_lordo = (t1-t0);
-    //double t_lordo = (double)(t1.tv_sec-t0.tv_sec)*1000000000+(double)(t1.tv_nsec-t0.tv_nsec);
-
     double t_medio = ((t_lordo/rip_lordo) - (t_tara/rip_tara));
-    //double t_medio = (t_lordo)/rip_lordo - (t_tara)/rip_tara;
-    //printf("tempo medio: %lf", t_medio);
     return t_medio;
 }
 
+/**
+ * metodo inutilizzato
+ * @param handler
+ * @param array
+ * @param size
+ * @param rip
+ */
 void calcolo_dei_tempi(void (*handler)(double*, int), double *array, int size, double rip){
     double t0 = (double)clock();
-    /*struct timespec t0;
-    clock_gettime(CLOCK_MONOTONIC, &t0);*/
-
     for (int i = 1; i<=rip; i++){
         (*handler)(array, size);
     }
-
     double t1 = (double)clock();
-    /*struct timespec t1;
-    clock_gettime(CLOCK_MONOTONIC, &t1);*/
-
     double t_tot = (t1-t0); //tempo totale di esecuzione
-    //double t_tot = (double)(t1.tv_sec-t0.tv_sec)*1000000000+(double)(t1.tv_nsec-t0.tv_nsec);
-
     double t_sing = t_tot/rip; //tempo medio di esecuzione
     printf("t_tot: %lf\nt_medio: %lf", t_tot, t_sing);
 }
 
+/**
+ * metodo per generare numeri pseudo casuali a partire dal seed
+ * @param seed
+ * @return un numero pseudo casuale
+ */
 double randomGenerator (double *seed){
     long a = 16807;
     long m = 2147483647;
@@ -185,6 +193,18 @@ double randomGenerator (double *seed){
     return (*seed)/m;
 }
 
+/**
+ * algoritmo di misurazione
+ * @param handler_of_methods
+ * @param number_of_methods
+ * @param array
+ * @param size
+ * @param t_min
+ * @param numero_campioni
+ * @param zalpa
+ * @param delta_input
+ * @param seed
+ */
 void misurazione (void (**handler_of_methods)(double*, int, double*), int number_of_methods,
                   double *array, int size,
                   double t_min, int numero_campioni, double zalpa, double delta_input, double *seed){
@@ -210,20 +230,3 @@ void misurazione (void (**handler_of_methods)(double*, int, double*), int number
     } while (!(delta<delta_input));
     printf("%5d\t%lf\t%lf\n", size, e, delta);
 }
-
-
-/*double granularita2 (){
-    struct timespec t0;
-    clock_gettime(CLOCK_MONOTONIC, &t0);
-    struct timespec t1;
-    clock_gettime(CLOCK_MONOTONIC, &t1);
-    while (t1.tv_nsec == t0.tv_nsec && t1.tv_sec == t0.tv_sec){
-        clock_gettime(CLOCK_MONOTONIC, &t1);
-    }
-    double res = (double)(t1.tv_sec-t0.tv_sec)+(double)(t1.tv_nsec-t0.tv_nsec)/(double)1000000000;
-    return res;
-}
-
-double get_t_min2 (long granularita, double tolleranza){
-    return (double)(granularita/tolleranza);
-}*/
