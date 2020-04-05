@@ -1,5 +1,4 @@
 # Algorithm_Project_2019
-
 # Introduzione
 Facendo riferimento alla relazione: il problema è di calcolare la mediana (inferiore) pesata di una generica sequenza di valori razionali positivi.
 
@@ -31,3 +30,5 @@ Per eseguirlo è necessario:
 chmod 755 compile.sh
 ./compile.sh
 ```
+# Ulteriori informazioni
+Tutte le informazioni relative al progetto sono contenuto nel file relazione.pdf
