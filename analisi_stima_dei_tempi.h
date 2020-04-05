@@ -5,7 +5,6 @@
 #ifndef ALGORITHM_PROJECT_2019_ANALISI_STIMA_DEI_TEMPI_H
 #define ALGORITHM_PROJECT_2019_ANALISI_STIMA_DEI_TEMPI_H
 #include <stdlib.h>
-#include <bits/types/FILE.h>
 
 double granularita();
 double get_t_min(double granularita, double tolleranza);
